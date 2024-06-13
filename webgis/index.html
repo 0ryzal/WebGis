@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebGIS</title>
+    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"> <img src="/img/default_design_alogo_that_blends_elements_of_atranquil_pond_2_removebg_preview_1.png"> </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#mengenal">Mengenal Keputih</a></li>
+                    <li><a href="#komoditas">Komoditas Tambak</a></li>
+                    <li><a href="#penting">Pentingnya Ikan</a></li>
+                    <li><a href="#informasi">Informasi Pengepul</a></li>
+                    <li><a href="https://chat.whatsapp.com/IEwbAQAcH9ZBl0e50y1DTT">Forum Komunitas</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>SI TAMBAK</h1>
+            <p>Ayo kita telusuri rahasia di balik tambak Keputih dan<br>eksplorasi alamnya dengan lebih mendalam!</p>
+            <a href="/map/index.html" class="hero-btn">Selengkapnya</a>
+        </div>
+    </section>
+
+    <!-- MENGENAL KEPUTIH -->
+
+    <!-- <section class="kata" id="mengenal">
+        <h1>Kelurahan Keputih</h1>
+    </section>
+    <section class="specs section grid">
+        <div class="features__container container grid">
+            <div class="features__group">
+                <img src="/img/untitled_removebg_preview_1.png" alt="" class="features__img">
+
+                <div class="features__card features__card-1">
+                    <h3 class="features__card-title">Wilayah Luas</h3>
+                    <p class="features__card-description">14,4 kilometer persegi</p>
+                </div>
+
+                <div class="features__card features__card-2">
+                    <h3 class="features__card-title">88% Tambak</h3>
+                    <p class="features__card-description">1.278 Hektar area tambak</p>
+                </div>
+
+                <div class="features__card features__card-3">
+                    <h3 class="features__card-title">Penduduk Padat</h3>
+                    <p class="features__card-description">20.392 jiwa</p>
+                    <p class="features__card-description-small">Disdukcapil Kota Surabaya per Juli 2023</p>
+                </div>
+
+                <div class="features__card features__card-4">
+                    <h3 class="features__card-title">Terdapat 5 PTN dan PTS Ternama</h3>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="campus" id="mengenal">
+        <h1 class="campus-title">Mengenal Keputih</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49964.24392934423!2d112.77286328541041!3d-7.290358185450595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7f09c510751b5%3A0xb04b9f70e748e85!2sKeputih%2C%20Kec.%20Sukolilo%2C%20Surabaya%2C%20Jawa%20Timur!5e1!3m2!1sid!2sid!4v1718115453201!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+        <div class="row">
+            <div class="campus-col">
+                <img src="/img/luas2.jpg">
+                <div class="layer">
+                    <h3>Wilayah Luas<br>14,4 kilometer persegi</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="/img/crowd2.jpg">
+                <div class="layer">
+                    <h3>Penduduk Padat<br>20.392 jiwa</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="/img/lake2.jpg">
+                <div class="layer">
+                    <h3>88% Tambak<br>1.278 Hektar area tambak</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="/img/univ2.jpg">
+                <div class="layer">
+                    <h3>Terdapat 5 PTN<br> dan PTS Ternama</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KOMODITAS TAMBAK -->
+    <section class="about-us" id="komoditas">
+        <div class="row">
+            <div class="about-col">
+                <h1>Komoditas Tambak</h1>
+                <p>Baca artikel atau jurnal menarik mengenai tambak dibawah ini!</p>
+                <ul>
+                    <li><a href="" class="hero-btn red-btn">Tips! Budidaya Ikan Bandeng</a></li>
+                    <li><a href="" class="hero-btn red-btn">5 Cara Jitu Memilih Bibit Ikan</a></li>
+                    <li><a href="" class="hero-btn red-btn">Trik membesarkan ikan dengan cepat</a></li>
+                </ul>
+            </div>
+            <div class="about-col">
+                <img src="/img/basemap_image.jpeg">
+            </div>
+        </div>
+    </section>
+
+    
+
+
+    <!-- KEPUTIH
+
+    <section class="keputih">
+        <div class="keputih-map">
+            <img src="/img/map.png" alt="">
+            <div class="pin keputih1">
+                <span>united states</span>
+            </div>
+            <div class="pin keputih2">
+                <span>united states</span>
+            </div>
+            <div class="pin keputih3">
+                <span>united states</span>
+            </div>
+            <div class="pin keputih4">
+                <span>united states</span>
+            </div>
+            <div class="pin keputih5">
+                <span>united states</span>
+            </div>
+            <div class="pin keputih6">
+                <span>united states<br>Amerika</span>
+                
+            </div>
+            <div class="pin keputih7">
+                <span>united states</span>
+            </div>
+        </div>
+    </section>  -->
+
+    
+
+    <!-- PENTINGNYA IKAN -->
+
+    <section class="categories" id="penting">
+        <h1 class="categories-title">Pentingnya Ikan</h1>
+        <div class="card-container">
+            <div class="card">
+                <img src="/img/omega3.jpg" alt="">
+                <div class="card-content">
+                    <h3>Menyediakan omega-3 penting untuk kesehatan tubuh</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="/img/kardio.jpg" alt="">
+                <div class="card-content">
+                    <h3>Mengurangi resiko penyakit kardiovaskular</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="/img/otak.jpg" alt="">
+                <div class="card-content">
+                    <h3>Meningkatkan fungsi kognitif dan memori</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="/img/mata.jpg" alt="">
+                <div class="card-content">
+                    <h3>Melindungi mata dari degenerasi makula</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="/img/bone.jpg" alt="">
+                <div class="card-content">
+                    <h3>Membantu kesehatan tulang dan sendi</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="/img/protein.jpg" alt="">
+                <div class="card-content">
+                    <h3>Sumber protein lengkap untuk pertumbuhan dan perbaikan</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDER -->
+
+    <section class="kata" id="informasi">
+        <h1>Informasi Pengepul</h1>
+    </section>
+    <section class="slider" >
+        <div class="container">
+            <div class="panel" style="background-image: url(/img/intersect1.jpg) ;">
+                <h4>Nama : Hj. Agus<br>Harga Udang : Rp50.000-Rp110.000<br>Harga Bandeng : Rp11.000-Rp30.000<br>Pembayaran : Cash, Transfer Bank(BCA)<br>No.Whatsapp : 081230821997<br><a href="https://www.google.co.id/maps/place/Jl.+Keputih+Tegal+No.27,+Keputih,+Kec.+Sukolilo,+Surabaya,+Jawa+Timur+60111/@-7.2911637,112.7989809,17z/data=!3m1!4b1!4m6!3m5!1s0x2dd7fa71a9f699e1:0xf4fe982efcf6340c!8m2!3d-7.2911637!4d112.8015558!16s%2Fg%2F11csk9lrjn?entry=ttu" class="hero-btn blue-btn">Alamat</a></h4>
+            </div>
+            <div class="panel " style="background-image: url(/img/intersect_1.jpeg) ;">
+                <h4>Nama : Sumarto<br>Harga Udang : Rp25.000-Rp160.000<br>Harga Bandeng : Rp12.000-Rp30.000<br>Pembayaran : Cash<br>No.Whatsapp : 081357375741<br><a href="https://www.google.co.id/maps/place/Jl.+KH.+Ahmad+Dahlan+No.25,+Keputih,+Kec.+Sukolilo,+Surabaya,+Jawa+Timur+60111/@-7.2891641,112.7976327,17z/data=!3m1!4b1!4m6!3m5!1s0x2dd7fa718ab382f5:0xaeb0d61bbe15b263!8m2!3d-7.2891641!4d112.8002076!16s%2Fg%2F11hcy_mmj8?entry=ttu" class="hero-btn blue-btn">Alamat</a></h4>
+            </div>
+            <div class="panel " style="background-image: url(/img/tambak.jpeg);">
+                <h4>Nama : Hj. Marsam<br>Harga Udang : Rp50.000-Rp180.000<br>Harga Bandeng : Rp14.000-Rp25.000<br>Pembayaran : Cash, QRIS<br>No.Whatsapp : 087855935131<br><a href="https://www.google.co.id/maps/place/Jl.+Keputih+Tegal+No.25,+Keputih,+Kec.+Sukolilo,+Surabaya,+Jawa+Timur+60111/@-7.290638,112.7981091,17z/data=!3m1!4b1!4m6!3m5!1s0x2dd7fa71bb77e0cd:0xfd5bf71a65791be!8m2!3d-7.290638!4d112.800684!16s%2Fg%2F11f53njkrw?entry=ttu" class="hero-btn blue-btn">Alamat</a></h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- KOMUNITAS -->
+
+    <section class="help">
+        <h1>Jika anda tertarik dengan pertambakan<br>Ayo join komunitas kami</h1>
+        <a href="https://chat.whatsapp.com/IEwbAQAcH9ZBl0e50y1DTT" class="hero-btn">Join Community</a>
+    </section>
+
+    <!--FOOTER-->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>SI Tambak by juragantambak2</p>
+        <div class="icons">
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/juragantambak2?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-tiktok"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+        </div>
+        <p class="copyright">
+            &copy; 2024 SiTambak. All Rights Reserved by juragantambak2
+        </p>
+    </section>
+
+<!--Java Script-->
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px"
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
